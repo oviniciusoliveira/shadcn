@@ -18,7 +18,7 @@ export function Sidebar() {
         <span className="uppercase font-bold text-sm text-slate-400">
           Project
         </span>
-        <Select value="example">
+        <Select defaultValue="example">
           <SelectTrigger className="mb-10">
             <SelectValue />
           </SelectTrigger>

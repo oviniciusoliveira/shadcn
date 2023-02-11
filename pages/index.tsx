@@ -17,10 +17,10 @@ import { Check, Download, Eye, History, Plus, Search } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full min-h-screen">
       <Header />
-      <div className="flex">
-        <div className="flex flex-col h-screen p-2 bg-slate-800 shadow w-80 border-r-[1px] border-r-slate-600">
+      <div className="flex grow">
+        <div className="flex flex-col p-2 bg-slate-800 shadow w-80 border-r-[1px] border-r-slate-600">
           <Sidebar />
         </div>
         <div className="bg-slate-900 w-full p-4">
@@ -39,7 +39,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-between items-center mt-4 gap-2">
-              <Select value="development">
+              <Select defaultValue="development">
                 <SelectTrigger className="text-slate-300 font-bold max-w-[200px]">
                   <SelectValue />
                 </SelectTrigger>
